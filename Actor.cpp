@@ -3228,6 +3228,20 @@ idActor::Event_SetSyncedAnimWeight
 */
 void idActor::Event_SetSyncedAnimWeight( int channel, int anim, float weight ) {
 	idEntity *headEnt;
+	/*{
+		idEntity a;
+		{
+			{
+				idEntity a;
+				{
+					idEntity e;
+				}
+				{
+					idEntity e;
+				}
+			}
+		}
+	}*/
 
 	headEnt = head.GetEntity();
 	switch( channel ) {

@@ -10196,6 +10196,8 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 	
 	if( gameLocal.isMultiplayer ) {
 		idEntity* attacker = NULL;
+		//idVec4 color(0, 1, 1);
+		//this->playerView.Flash(color, 5);
 
 		int methodOfDeath = -1;
 		if ( inflictor->IsType( idProjectile::GetClassType() ) ) {
@@ -10242,6 +10244,7 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 					dynamicProtectionScale -= 0.05f;
 					// mycode BEGIN
 					//view.viewaxis.RotateArbitrary(right, avg);
+					//SetViewAngles( angle );
 					// mycode END
 				}
 			}
