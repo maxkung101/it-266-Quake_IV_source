@@ -12,4 +12,6 @@ Player moves slower
 
 Weapons can launch multiple bullets
 
-[link to def files] (https://github.com/maxkung101/it-266-Quake_IV)
+Definitions
+===========
+To see the repository for the definition files, click [here.] (https://github.com/maxkung101/it-266-Quake_IV)
