@@ -1138,13 +1138,12 @@ private:
 	stateResult_t			State_Legs_Fall					( const stateParms_t& parms );
 	stateResult_t			State_Legs_Land					( const stateParms_t& parms );
 	stateResult_t			State_Legs_Dead					( const stateParms_t& parms );
+	// mycode BEGIN
 	renderView_t		view;
+	// mycode END
 	
  	CLASS_STATES_PROTOTYPE( idPlayer );
 };
-
-// mycode BEGIN
-// mycode END
 
 ID_INLINE bool idPlayer::IsBeingTalkedTo( void ) {
 	return talkingNPC!=NULL;

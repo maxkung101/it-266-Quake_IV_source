@@ -10243,9 +10243,8 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 				if ( gameLocal.time > lastDmgTime + 500 && dynamicProtectionScale > 0.25f ) {
 					dynamicProtectionScale -= 0.05f;
 					// mycode BEGIN
-					//view.viewaxis.RotateArbitrary(kick, 90);
 					view.viewaxis.RotateArbitrary(dir, 90);
-					//view.viewaxis.RotateArbitrary(up, avg);
+					view.viewaxis.RotateArbitrary(kick, 90);
 					//SetViewAngles( dir );
 					// mycode END
 				}
