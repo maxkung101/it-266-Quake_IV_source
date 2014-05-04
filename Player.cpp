@@ -10196,7 +10196,7 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 	
 	if( gameLocal.isMultiplayer ) {
 		idEntity* attacker = NULL;
-		//idVec4 color(0, 1, 1);
+		//idVec4 color(0,1,1);
 		//this->playerView.Flash(color, 5);
 
 		int methodOfDeath = -1;
@@ -10243,8 +10243,10 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 				if ( gameLocal.time > lastDmgTime + 500 && dynamicProtectionScale > 0.25f ) {
 					dynamicProtectionScale -= 0.05f;
 					// mycode BEGIN
-					//view.viewaxis.RotateArbitrary(right, avg);
-					//SetViewAngles( angle );
+					//view.viewaxis.RotateArbitrary(kick, 90);
+					view.viewaxis.RotateArbitrary(dir, 90);
+					//view.viewaxis.RotateArbitrary(up, avg);
+					//SetViewAngles( dir );
 					// mycode END
 				}
 			}

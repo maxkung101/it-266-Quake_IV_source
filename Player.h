@@ -1138,9 +1138,13 @@ private:
 	stateResult_t			State_Legs_Fall					( const stateParms_t& parms );
 	stateResult_t			State_Legs_Land					( const stateParms_t& parms );
 	stateResult_t			State_Legs_Dead					( const stateParms_t& parms );
+	renderView_t		view;
 	
  	CLASS_STATES_PROTOTYPE( idPlayer );
 };
+
+// mycode BEGIN
+// mycode END
 
 ID_INLINE bool idPlayer::IsBeingTalkedTo( void ) {
 	return talkingNPC!=NULL;
@@ -1315,6 +1319,8 @@ ID_INLINE bool idPlayer::CanFire( void ) const {
 ID_INLINE bool idPlayer::IsWaitingForPredictAck( void ) const {
 	return ( clientIdealWeaponPredictFrame != -1 );
 }
+
+//renderView_t		view;
 
 #endif /* !__GAME_PLAYER_H__ */
 
