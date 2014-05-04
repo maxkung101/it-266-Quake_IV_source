@@ -11,3 +11,5 @@ C++ Edits
 Player moves slower
 
 Weapons can launch multiple bullets
+
+[link to def files] (https://github.com/maxkung101/it-266-Quake_IV)
