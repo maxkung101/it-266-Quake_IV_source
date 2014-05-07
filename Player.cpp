@@ -8700,14 +8700,16 @@ void idPlayer::AdjustSpeed( void ) {
 		//speed = pm_speed.GetFloat();
 		speed = pm_speed.GetFloat()*3/4;
 	} else {
-		speed = pm_walkspeed.GetFloat();
+		//speed = pm_walkspeed.GetFloat();
+		speed = pm_walkspeed.GetFloat() * 2.5;
 		bobFrac = 0.0f;
 	}
 
 	speed *= PowerUpModifier(PMOD_SPEED);
 
 	if ( influenceActive == INFLUENCE_LEVEL3 ) {
-		speed *= 0.33f;
+		//speed *= 0.33f;
+		speed *= 2.0f;
 	}
 
 	physicsObj.SetSpeed( speed, pm_crouchspeed.GetFloat() );
