@@ -8,7 +8,7 @@ Quake IV is a first person shooter game developed by id software and Raven. Game
 
 C++ Edits
 =========
-Player moves slower
+Player moves similar to that of Quake II
 
 Weapons can launch multiple bullets
 
