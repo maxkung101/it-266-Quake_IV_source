@@ -8697,7 +8697,8 @@ void idPlayer::AdjustSpeed( void ) {
 		bobFrac = 0.0f;
  	} else if ( !physicsObj.OnLadder() && ( usercmd.buttons & BUTTON_RUN ) && ( usercmd.forwardmove || usercmd.rightmove ) && ( usercmd.upmove >= 0 ) ) {
 		bobFrac = 1.0f;
-		speed = pm_speed.GetFloat();
+		//speed = pm_speed.GetFloat();
+		speed = pm_speed.GetFloat()*3/4;
 	} else {
 		speed = pm_walkspeed.GetFloat();
 		bobFrac = 0.0f;
@@ -8706,8 +8707,7 @@ void idPlayer::AdjustSpeed( void ) {
 	speed *= PowerUpModifier(PMOD_SPEED);
 
 	if ( influenceActive == INFLUENCE_LEVEL3 ) {
-		//speed *= 0.33f;
-		speed *= 0.08f;
+		speed *= 0.33f;
 	}
 
 	physicsObj.SetSpeed( speed, pm_crouchspeed.GetFloat() );
