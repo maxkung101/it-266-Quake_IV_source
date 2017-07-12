@@ -18,4 +18,4 @@ Weapons can launch multiple bullets
 
 Definitions
 ===========
-To see the repository for the definition files, click [here.] (https://github.com/maxkung101/it-266-Quake_IV)
+To see the repository for the definition files, click [here.](https://github.com/maxkung101/it-266-Quake_IV)
